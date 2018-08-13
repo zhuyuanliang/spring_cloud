@@ -1,0 +1,9 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: registry-server
+eureka:
+  client:
+    allow-redirects: false
+    fetch-registry: false
