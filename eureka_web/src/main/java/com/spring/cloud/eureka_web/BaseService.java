@@ -13,7 +13,7 @@ public class BaseService {
 
     @HystrixCommand(fallbackMethod = "getOneFallback")
     public String getOne() {
-        return restTemplate.getForObject("http://REGISTRY-CLIENT/", String.class);
+        return restTemplate.getForObject("http://REGISTRY-CLIENT/user/getUser", String.class);
     }
 
     public String getOneFallback() {

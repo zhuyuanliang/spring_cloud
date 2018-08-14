@@ -12,7 +12,7 @@ public class IndexController {
     @Resource
     private BaseService baseService;
     @RequestMapping("/hi")
-    public String hi(@RequestParam String id){
+    public String hi(){
         return baseService.getOne();
     }
 }
