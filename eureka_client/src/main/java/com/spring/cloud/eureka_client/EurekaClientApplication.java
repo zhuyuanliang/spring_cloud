@@ -1,11 +1,9 @@
 package com.spring.cloud.eureka_client;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.SpringCloudApplication;
 
-@SpringBootApplication
-@EnableEurekaClient
+@SpringCloudApplication
 public class EurekaClientApplication {
 
 	public static void main(String[] args) {
