@@ -4,17 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.spring.cloud</groupId>
-	<artifactId>spring_cloud</artifactId>
+	<artifactId>user_client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
-	<modules>
-		<module>eureka_server</module>
-		<module>eureka_client</module>
-		<module>eureka_web</module>
-		<module>user_client</module>
-	</modules>
-	<name>spring_cloud</name>
+	<name>user_client</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -31,10 +25,24 @@
 	</properties>
 
 	<dependencies>
-		<!--<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>-->
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
